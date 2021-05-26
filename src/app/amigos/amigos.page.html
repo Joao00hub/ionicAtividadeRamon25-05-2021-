@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Amigos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let amigo of amigos">
+      <ion-label>{{ amigo.nome }}</ion-label>
+      <ion-label>{{ amigo.idade }}</ion-label>
+      <ion-label>{{ amigo.nivelAmizade }}</ion-label>
+      <ion-button (click)="MostrarActionSheet()"><ion-icon name="trash-outline"></ion-icon></ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
